@@ -1,0 +1,198 @@
+.wrapper {
+  width: 100%;
+  display: flex;
+  .image {
+    width: 600px;
+    height: 857px;
+    img {
+      width: 100%;
+      height: 100%;
+      border-radius: 6px;
+    }
+  }
+  .area {
+    margin-left: 35px;
+    background-color: #fff;
+    .text {
+      height: 350px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      border-bottom: 1px solid #f7f7f7;
+      padding-bottom: 35px;
+      .rating {
+        height: 41px;
+        display: flex;
+        align-items: center;
+        .ratingStars {
+          display: flex;
+          .star {
+            display: flex;
+            margin-right: 5px;
+          }
+        }
+        .ratingCount {
+          font-size: 16px;
+          font-weight: 400;
+          line-height: 24px;
+          margin-left: 5px;
+        }
+      }
+      .title {
+        height: 38px;
+        margin-bottom: 16px;
+        span {
+          font-size: 24px;
+          font-weight: 400;
+          line-height: 28px;
+        }
+      }
+      .price {
+        height: 54px;
+        span {
+          font-size: 32px;
+          font-weight: 700;
+          line-height: 38px;
+        }
+      }
+      .size {
+        margin-bottom: 30px;
+        p {
+          font-size: 16px;
+          font-weight: 400;
+          line-height: 19px;
+        }
+        .sizeValues {
+          display: flex;
+          .sizeButton {
+            width: 43px;
+            height: 43px;
+            border-radius: 6px;
+            background-color: #f7f7f7;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-right: 15px;
+            cursor: pointer;
+          }
+        }
+      }
+      .buttons {
+        display: flex;
+        .ButtonAddCart {
+          width: 316px;
+          height: 58px;
+          background-color: #f7f7f7;
+          border-radius: 6px;
+          display: flex;
+          justify-content: space-between;
+          .cartCounters {
+            width: 48px;
+            height: 58px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+            &:active{
+              background-color: #fff;
+            }
+          }
+          .cartCount {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            text-align: center;
+            cursor: pointer;
+            p {
+              margin: 0;
+              margin-bottom: 4px;
+              font-size: 14px;
+              font-weight: 400;
+              line-height: 14px;
+            }
+            p:last-child {
+              font-size: 12px;
+            }
+          }
+        }
+        .ButtonCart {
+          width: 316px;
+          height: 58px;
+          background-color: #ff6163ff;
+          border-radius: 6px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          cursor: pointer;
+          span {
+            font-size: 24px;
+            font-weight: 400;
+            line-height: 24px;
+            color: #ffffff;
+          }
+        }
+        .ButtonFovorite {
+          cursor: pointer;
+          width: 58px;
+          height: 58px;
+          background-color: #f7f7f7;
+          margin-left: 25px;
+          border-radius: 6px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 1200px) {
+  .wrapper {
+    width: 100%;
+    .image {
+      width: 484px;
+      height: 692px;
+    }
+  }
+}
+
+@media (max-width: 992px) {
+  .wrapper {
+    width: 100%;
+    display: block;
+    .image {
+      width: 100%;
+      height: 714px;
+      display: flex;
+      justify-content: center;
+      img {
+        width: 500px;
+        height: 714px;
+      }
+    }
+    .area {
+      margin-top: 50px;
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .wrapper {
+    width: 100%;
+    display: block;
+    .image {
+      width: 100%;
+      height: 500px;
+      img {
+        width: 345px;
+        height: 500px;
+      }
+    }
+    .area {
+      margin-top: 10px;
+      margin-left: 0;
+      justify-content: start;
+    }
+  }
+}

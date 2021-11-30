@@ -1,0 +1,30 @@
+.wrapper {
+  width: 100%;
+  overflow-y: hidden;
+  overflow-x: scroll;
+  transition: all 0.5s cubic-bezier(0.59, -0.17, 0.3, 1.67);
+  &::-webkit-scrollbar {
+    height: 6px;
+    background-color: #edededff;
+    border-radius: 3px;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background-color: #ff6163;
+    border-radius: 3px;
+  }
+
+  .track {
+    display: flex;
+    padding-bottom: 24px;
+  }
+}
+
+
+@media (max-width: 767px) {
+  .wrapper {
+    .track {
+      padding-bottom: 12px;
+    }
+  }
+}

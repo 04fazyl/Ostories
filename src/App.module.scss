@@ -1,0 +1,33 @@
+.container {
+  width: 1200px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  .main {
+    flex: auto;
+  }
+}
+
+@media (max-width: 1200px) {
+  .container {
+    width: 970px;
+  }
+}
+@media (max-width: 992px) {
+  .container {
+    width: 688px;
+  }
+}
+@media (max-width: 767px) {
+  .container {
+    width: 350px;
+  }
+}
+@media (max-width: 330px) {
+  .container {
+    display: none;
+  }
+}
+
+// 1280, 1049 ipad iphone X
